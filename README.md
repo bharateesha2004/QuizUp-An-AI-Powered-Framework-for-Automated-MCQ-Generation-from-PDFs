@@ -2,6 +2,8 @@
 
 QuizUp is a web-based application that leverages Google's Gemini 1.5 Pro AI model to automatically generate questions from uploaded documents. The application supports multiple question formats and difficulty levels, making it ideal for educators, students, and anyone looking to create quiz content from educational materials.
 
+---
+
 ## Features
 
 - **Multiple File Format Support**: Upload documents in PDF, TXT, or DOCX formats
@@ -13,6 +15,15 @@ QuizUp is a web-based application that leverages Google's Gemini 1.5 Pro AI mode
 - **Export Options**: Download generated questions in both TXT and PDF formats
 - **Interactive UI**: Modern, responsive interface with drag-and-drop file upload
 - **Real-time Processing**: Instant question generation and preview
+
+---
+
+## Workflow Diagram
+
+![Screenshot 2024-12-31 152026](https://github.com/user-attachments/assets/86d0b43b-8905-43c7-b75c-86f21a0f57e1)
+
+
+---
 
 ## Installation
 
@@ -40,6 +51,8 @@ pip install flask pdfplumber python-docx google-generativeai fpdf Werkzeug
 os.environ["GOOGLE_API_KEY"] = "your-api-key"
 ```
 
+---
+
 ## Project Structure
 
 ```
@@ -51,6 +64,8 @@ quizup/
 ├── uploads/           # Temporary storage for uploaded files
 └── results/           # Generated question files (TXT/PDF)
 ```
+
+---
 
 ## Usage
 
@@ -74,6 +89,8 @@ python app.py
    - Download as TXT or PDF
    - Return to generate more questions
 
+---
+
 ## Technical Details
 
 - **Backend**: Python Flask
@@ -83,6 +100,8 @@ python app.py
   - PDFPlumber for PDF extraction
   - python-docx for DOCX processing
   - Built-in file handling for TXT files
+
+---
 
 ## API Configuration
 
@@ -94,12 +113,16 @@ The application uses Google's Generative AI API. To configure:
 os.environ["GOOGLE_API_KEY"] = "your-api-key"
 ```
 
+---
+
 ## Notes
 
 - The application creates `uploads/` and `results/` directories automatically
 - Uploaded files are deleted after processing
 - Generated files are stored in the `results/` directory
 - API key quota limitations may require restarting the application if exceeded
+
+---
 
 ## Contributing
 
@@ -108,7 +131,11 @@ os.environ["GOOGLE_API_KEY"] = "your-api-key"
 3. Make your changes
 4. Submit a pull request
 
+---
+
 ## License
+
+---
 
 ## Acknowledgments
 
@@ -116,4 +143,4 @@ os.environ["GOOGLE_API_KEY"] = "your-api-key"
 - Flask framework
 - Tailwind CSS for styling
 
-- Happy learning with QuizUp! 🎓
+Happy learning with QuizUp! 🎓
